@@ -1,7 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #373F51;
-    margin: 15px;
+    margin: 0px;
 }
 
 .hoverT {
@@ -20,6 +20,9 @@ nav {
     list-style-type: none;
     display: flex;
     padding: 20px;
+    margin-block-start: 0;
+    margin-block-end: 15px;
+
 }
 
 nav a {
