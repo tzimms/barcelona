@@ -18,15 +18,37 @@
 </head>
 
 <body>
-    <section>
-        <ul class="slider">
-            <li> <img src="https://i.imgur.com/aYgXsPO.jpg" alt="Barcelonaview"></img>
-            </li>
-            <li> <img src="https://i.imgur.com/eYQkNia.jpg" alt="Parkview"></img>
-            </li>
-            <li> <img src="https://i.imgur.com/sZQ7aPG.jpg" alt="Skyline"></img>
-            </li>
-        </ul>
+<!--############################### HomePage ####################################-->
+
+    <!--######################### Main Section #########################-->
+    <section class="MainSection">
+
+        <!--##################### Photo Slider ##################-->
+        
+        <div class="containerSize" >
+            <img class="mySlides" src="https://i.imgur.com/aYgXsPO.jpg" alt="Barcelonaview">
+            <img class="mySlides" src="https://i.imgur.com/eYQkNia.jpg" alt="Parkview">
+            <img class="mySlides" src="https://i.imgur.com/sZQ7aPG.jpg" alt="Skyline">
+        </div>
+        
+        <script>
+            var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+        </script>
+      
+        <!--####################### NavBar #####################-->
         <nav>
             <ul class="navbar">
                 <li><span class="logo"> <a href="https://i.imgur.com/34tPJzg.png"></a></span></li>
@@ -37,6 +59,8 @@
             </ul>
         </nav>
     </section>
+
+    <!--######################## Photo Gallery ##########################-->
     <section class="container">
         <div>
             <div>
@@ -107,6 +131,8 @@
             <div class="hoverT">Casa</div>
         </div>
     </section>
+
+     <!--######################## Footer #############################-->
     <footer>
         <a href="BarcelonaProjectPage1.html#Home ">Home</a>
         <a href="BarcelonaProjectPage2.html#Monuments ">Monument</a>
