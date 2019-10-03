@@ -1,0 +1,24 @@
+#contact form {
+    width: 600px;
+    margin-left: 25%;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 600px;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #DFBBB1;
+}
+
+.map iframe {
+    margin-left: 25%;
+    padding: 30px;
+    height: 400px;
+    width: 600px;
+}
