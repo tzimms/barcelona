@@ -1,12 +1,15 @@
 #contact form {
     width: 600px;
-    margin-left: 25%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: space-between;
+    display: flex;
+    margin: 0 auto;
 }
 
 input[type="text"],
 select,
 textarea {
-    width: 600px;
     padding: 12px;
     border: 1px solid;
     border-radius: 4px;
@@ -17,8 +20,43 @@ textarea {
 }
 
 .map iframe {
-    margin-left: 25%;
     padding: 30px;
     height: 400px;
     width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.map,
+.contacting {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .map,
+    .contacting {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map,
+    .contacting {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .map,
+    .contacting {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .map,
+    .contacting {
+        width: 350px;
+    }
 }
