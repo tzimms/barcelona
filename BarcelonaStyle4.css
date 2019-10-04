@@ -6,22 +6,23 @@
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-  }
-  .row {
-    padding-bottom: 153px;
+}
 
+.row {
+    padding-bottom: 153px;
     padding-top: 150px;
-  }
-  .our-team .picture {
+}
+
+.our-team .picture {
     display: inline-block;
     height: 130px;
     width: 130px;
     margin-bottom: 50px;
     z-index: 1;
     position: relative;
-  }
-  
-  .our-team .picture::before {
+}
+
+.our-team .picture::before {
     content: "";
     width: 100%;
     height: 0;
@@ -34,13 +35,13 @@
     opacity: 0.9;
     transform: scale(3);
     transition: all 0.3s linear 0s;
-  }
-  
-  .our-team:hover .picture::before {
+}
+
+.our-team:hover .picture::before {
     height: 100%;
-  }
-  
-  .our-team .picture::after {
+}
+
+.our-team .picture::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -50,88 +51,86 @@
     top: 0;
     left: 0;
     z-index: -1;
-  }
-  
-  .our-team .picture img {
+}
+
+.our-team .picture img {
     width: 100%;
     height: auto;
     border-radius: 50%;
     transform: scale(1);
     transition: all 0.9s ease 0s;
-  }
-  
-  .our-team:hover .picture img {
+}
+
+.our-team:hover .picture img {
     box-shadow: 0 0 0 14px #f7f5ec;
     transform: scale(0.7);
-  }
-  
-  .our-team .title {
+}
+
+.our-team .title {
     display: block;
     font-size: 15px;
     color: #4e5052;
     text-transform: capitalize;
-  }
-  
-  .our-team .social {
+}
+
+.our-team .social {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color:#008DD5;
+    background-color: #008DD5;
     position: absolute;
     bottom: -100px;
     left: 0;
     transition: all 0.5s ease 0s;
-  }
-  
-  .our-team:hover .social {
+}
+
+.our-team:hover .social {
     bottom: 0;
-  }
-  
-  .our-team .social li {
+}
+
+.our-team .social li {
     display: inline-block;
-  }
-  
-  .our-team .social li a {
+}
+
+.our-team .social li a {
     display: block;
     padding: 10px;
     font-size: 17px;
     color: white;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-  }
-  
-  .our-team .social li a:hover {
+}
+
+.our-team .social li a:hover {
     color: #008DD5;
     background-color: #f7f5ec;
-  }
-  .name {
-      color: #F56476;
-  }
-  .aboutustitle {
+}
+
+.name {
+    color: #F56476;
+}
+
+.aboutustitle {
     font-weight: 500;
-
-    line-height: 1.2; flex-wrap: wrap;
-
+    line-height: 1.2;
+    flex-wrap: wrap;
     margin-right: -15px;
-    
     margin-left: -15px;
-    
     padding-bottom: 153px;
-    
     padding-top: 150px;
     padding: 20px;
-  }
-  .aboutussubtitle{
-    font-weight: 500;
+}
 
+.aboutussubtitle {
+    font-weight: 500;
     line-height: 1.2;
     padding: 20px;
-  }
-  #navbar {
-      justify-content: flex-start;
-      background: #373F51;
-      list-style-type: none;
-      display: flex;
-      padding: 20px;
-  }
- 
+}
+
+#navbar {
+    justify-content: flex-start;
+    background: #373F51;
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+}
