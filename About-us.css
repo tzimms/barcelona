@@ -154,3 +154,13 @@
      margin: 25px 0;
      background: black;
  }
+ 
+ #navbar {
+     background: #373F51;
+     list-style-type: none;
+     display: flex;
+     padding: 20px;
+     margin-block-start: 0;
+     margin-block-end: 15px;
+     justify-content: flex-start;
+ }
