@@ -34,3 +34,40 @@ textarea {
     display: block;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 800px) {
+    #Contact form {
+        width: 90%;
+        justify-items: center;
+        height: fit-content;
+    }
+    input[type="text"],
+    select,
+    textarea {
+        resize: vertical;
+        background-color: #DFBBB1;
+        width: 80%;
+    }
+    .map {
+        padding: 15px;
+        height: 100%;
+    }
+    .map iframe {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+
+/* @media screen and (max-width: 400px) {
+                        .container {
+                            flex-direction: column;
+                            padding: 15px;
+                            justify-content: auto;
+                        }
+                        .top ul li {
+                            width: 60vw;
+                            height: fit-content;
+                            padding-top: 5px;
+                        }
+                    } */
