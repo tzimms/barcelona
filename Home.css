@@ -1,44 +1,41 @@
+/*##### Photo Slider ########*/
 div.containerSize {
     width: 100%;
     height: 100%;
     margin: 0;
 }
-
 img.mySlides {
     width: 100%;
     height: 925px;
     max-width: 100%;
 }
 
+
+/*####### Photo Gallery ##########*/
 section.container {
     width: 98%;
     height: 100%;
     margin: 0;
     padding: 50px 15px 60px 15px;
 }
-
 .rowHome {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
 }
-
 div.col-4 {
     width:  33.33%;
 }
-
-img {
-    width: 100%;
-    height: 340px; 
-    max-width: 100%;
-    
-}
-
 div.box{
     background-color: rgba(230, 230, 255,.3);
     box-shadow: 0px 0px 5px 1px rgba(128, 128, 255,.3);
     text-align: center;
     padding: 2.5px;
+}
+div.box img {
+    width: 100%;
+    height: 340px; 
+    max-width: 100%;
+    
 }
