@@ -75,38 +75,6 @@
      text-transform: capitalize;
  }
  
- .our-team .social {
-     width: 100%;
-     padding: 0;
-     margin: 0;
-     background-color: #008DD5;
-     position: absolute;
-     bottom: -100px;
-     left: 0;
-     transition: all 0.5s ease 0s;
- }
- 
- .our-team:hover .social {
-     bottom: 0;
- }
- 
- .our-team .social li {
-     display: inline-block;
- }
- 
- .our-team .social li a {
-     display: block;
-     padding: 10px;
-     font-size: 17px;
-     color: white;
-     transition: all 0.3s ease 0s;
-     text-decoration: none;
- }
- 
- .our-team .social li a:hover {
-     color: #008DD5;
-     background-color: #f7f5ec;
- }
  
  .name {
      color: #F56476;
@@ -118,22 +86,30 @@
      flex-wrap: wrap;
      margin-right: -15px;
      margin-left: -15px;
-     padding-bottom: 153px;
-     padding-top: 150px;
-     padding: 20px;
+     padding-bottom: 30px;
+     padding-top: 50px;
+    color: #E43F6F;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
  }
  
- .aboutussubtitle {
+ p {
      font-weight: 500;
      line-height: 1.2;
-     padding: 20px;
+     padding: 25px;
+    color: #008DD5;
+    font-size: 30px;
+    text-align: center;
+   font-family: 'Lato', sans-serif;
+   font-weight: 700;
  }
  
  #imgtext {
      display: flex;
      justify-content: center;
      text-align: center;
-     padding: 100px;
+     padding: 20px;
  }
  
  .main {
@@ -148,6 +124,7 @@
      float: right;
      margin: 0px 40px;
      width: 400px;
+     padding-bottom: 15px;
  }
  
  .line {
