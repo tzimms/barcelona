@@ -1,73 +1,95 @@
+
+h2 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+#Contact {
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contacting {
+    flex: 1;
+    align-items: center;
+    display: flex;
+
 /*####### Contact Section #####*/
-#Contact form {
-    width: 600px;
     justify-content: center;
     flex-direction: column;
-    align-content: space-between;
+    width: 100%;
+}
+
+#Contact form {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
 }
 
 input[type="text"],
 select,
 textarea {
-    padding: 12px;
-    border: 1px solid;
-    border-radius: 4px;
+    width: 80%;
+    padding: 10px;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
     background-color: #DFBBB1;
 }
 
-/*####### Map Section #######*/
-.map iframe {
-    padding: 30px;
-    height: 400px;
-    width: 600px;
-    margin: 0 auto;
-    display: block;
+.map {
+    padding-left: 15px;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
+
+/*####### Response Section #######*/
+@media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contacting {
+        align-items: center;
+        width: 90%;
+        height: 80%;
+        padding: 20px 0px;
+    }
+    .contacting form {
+        align-items: center;
+        flex-direction: column;
+        width: 85vw;
 .map,
 .contacting {
     display: block;
     margin: 0 auto;
 }
-
-@media screen and (max-width: 800px) {
-    #Contact form {
-        width: 90%;
-        justify-items: center;
-        height: fit-content;
-    }
     input[type="text"],
     select,
     textarea {
+        align-self: center;
+        width: 80%;
+        padding: 12px;
+        margin-top: 6px;
+        margin-bottom: 16px;
         resize: vertical;
         background-color: #DFBBB1;
-        width: 80%;
     }
     .map {
-        padding: 15px;
-        height: 100%;
-    }
-    .map iframe {
-        width: 90%;
-        height: 80%;
+        width: 85vw;
     }
 }
-
-
-/* @media screen and (max-width: 400px) {
-                        .container {
-                            flex-direction: column;
-                            padding: 15px;
-                            justify-content: auto;
-                        }
-                        .top ul li {
-                            width: 60vw;
-                            height: fit-content;
-                            padding-top: 5px;
-                        }
-                    } */
+      
