@@ -1,9 +1,10 @@
+/*######### NavBar ##########*/
 
-/*####################### NavBar #####################*/
 nav {
     width: 100%;
     justify-content: flex-start;
 }
+
 #navbar {
     background: #373F51;
     list-style-type: none;
@@ -13,25 +14,30 @@ nav {
     margin-block-end: 0;
     justify-content: flex-start;
 }
+
 #navbar a {
     color: #DFBBB1;
     font-size: 20px;
     padding: 10px;
     text-decoration-line: none;
 }
+
 #navbar a:hover {
     background-color: #ff9f99;
     color: black;
     padding: 20px 10px 20px 10px;
 }
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  
+}
 
-/*####################### Footer #####################*/
+
+
+/*######### Footer ##########*/
+
 footer {
     background-color: #373F51;
     padding: 15px;
@@ -47,7 +53,8 @@ footer a {
 
 
 
-/*####################### Default values #####################*/
+
+/*####### Default values #########*/
 
 body {
     font-family: 'Lato', sans-serif;
@@ -62,14 +69,18 @@ body {
     display: none;
 }
 
-li { list-style-type: none;}
+li {
+    list-style-type: none;
+}
 
-img {max-width: 955px;}
+img {
+    max-width: 955px;
+}
 
 h1 {
     text-align: center;
     color: #E43F6F;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 h2 {

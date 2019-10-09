@@ -1,3 +1,4 @@
+
 h2 {
     margin: 0;
     padding-bottom: 15px;
@@ -19,6 +20,8 @@ h2 {
     flex: 1;
     align-items: center;
     display: flex;
+
+/*####### Contact Section #####*/
     justify-content: center;
     flex-direction: column;
     width: 100%;
@@ -51,12 +54,8 @@ textarea {
     height: 100%;
 }
 
-.map iframe {
-    width: 80%;
-    height: 300px;
-    margin: 0 auto;
-}
 
+/*####### Response Section #######*/
 @media screen and (max-width: 800px) {
     .container {
         display: flex;
@@ -73,7 +72,11 @@ textarea {
         align-items: center;
         flex-direction: column;
         width: 85vw;
-    }
+.map,
+.contacting {
+    display: block;
+    margin: 0 auto;
+}
     input[type="text"],
     select,
     textarea {
@@ -89,3 +92,4 @@ textarea {
         width: 85vw;
     }
 }
+      

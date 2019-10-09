@@ -1,10 +1,11 @@
+
+/*#### Cathedrals section #####*/
 h1 {
     padding: 20px;
 }
 
 h2 {
     padding: 25px
-}
 
 p {
     margin: 0px;
@@ -13,12 +14,14 @@ p {
 .main {
     width: 100%;
     display: flex;
+
 }
 
 #Monuments {
     align-items: center;
     width: 80%;
     margin: auto;
+    border-radius: 10px;
 }
 
 #imgtext {
@@ -35,7 +38,7 @@ p {
     align-items: center;
     flex: 1;
     margin: 0px;
-}
+
 
 #maintext {
     flex: 1;
@@ -43,8 +46,10 @@ p {
     padding-left: 15px;
 }
 
+
+
 @media screen and (max-width: 800px) {
-    {
+    #imgtext {
         flex-direction: column;
         padding: 15px;
     }
@@ -55,6 +60,8 @@ p {
         padding-top: 15px;
     }
 }
+
+/*##### Cathedrals gallery #####*/
 
 .container {
     display: flex;
