@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./Main.css">
     <link rel="stylesheet" href="./Contact-us.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,21 +27,25 @@
             </ul>
         </nav>
     </section>
-    <section id="Contact" class="contacting">
-        <h2>Contact Us!</h2>
-        <form action="https://formspree.io/email@domain.tld" method=POST>
-            <input type="text" name="name" placeholder="Your name" required autofocus/>
-            <input type="text" name="email" placeholder="@" required autofocus/>
-            <input type="text" name="address" placeholder="Address" required autofocus/>
-            <textarea cols="20" rows="5" placeholder="Your Message"></textarea>
-            <input type="submit">
-        </form>
-    </section>
-    <hr>
-    <section>
-        <div class="map">
-            <h2>Our highlights of Barcelona </h2>
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=13NKppbn2gZVa00Gk7nL3d4mZBR20zZAo"></iframe>
+    <section id="Contact">
+        <div>
+            <h1>Contact Us!</h1>
+        </div>
+        <div class="container">
+            <div class="contacting">
+                <h2>Fill out this form! </h2>
+                <form action="https://formspree.io/email@domain.tld" method=POST>
+                    <input type="text" name="name" placeholder="Your name" required autofocus/>
+                    <input type="text" name="email" placeholder="@" required autofocus/>
+                    <input type="text" name="address" placeholder="Address" required autofocus/>
+                    <textarea cols="20" rows="5" placeholder="Your Message"></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="map">
+                <h2>Our highlights of Barcelona! </h2>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=13NKppbn2gZVa00Gk7nL3d4mZBR20zZAo"></iframe>
+            </div>
         </div>
     </section>
     <footer>
