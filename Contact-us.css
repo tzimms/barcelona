@@ -1,3 +1,4 @@
+/*####### Contact Section #####*/
 #Contact form {
     width: 600px;
     justify-content: center;
@@ -19,6 +20,7 @@ textarea {
     background-color: #DFBBB1;
 }
 
+/*####### Map Section #######*/
 .map iframe {
     padding: 30px;
     height: 400px;
