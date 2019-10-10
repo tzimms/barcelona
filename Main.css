@@ -8,7 +8,7 @@ nav {
     padding: 0;
 }
 
-ul.topnav li{
+ul.topnav li {
     list-style-type: none;
     float: left;
     cursor: pointer;
@@ -30,43 +30,50 @@ ul.topnav a:hover {
     color: black;
     padding: 10px;
 }
- 
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-ul.topnav li.dropdownicon{
+ul.topnav li.dropdownicon {
     display: none;
 }
+
+
 /*### Mobile ###*/
 
-@media screen and (max-width: 600px) { /*define o que temos quando a largura da janela é inferior a 600px*/
-    ul.topnav li:not(:nth-child(1)){ /*para todos os elementos da lista, excepto para o elemento 1*/
-        display:none; /*os elementos "desaparecem" da visualizaçao*/
+@media screen and (max-width: 600px) {
+    /*define o que temos quando a largura da janela é inferior a 600px*/
+    ul.topnav li:not(:nth-child(1)) {
+        /*para todos os elementos da lista, excepto para o elemento 1*/
+        display: none;
+        /*os elementos "desaparecem" da visualizaçao*/
     }
-    ul.topnav li.dropdownicon{
+    ul.topnav li.dropdownicon {
         display: block;
         float: right;
     }
-    ul.topnav.responsive li.dropdownicon{
+    ul.topnav.responsive li.dropdownicon {
         position: absolute;
         top: 0;
         right: 0;
     }
-    ul.topnav.responsive{
+    ul.topnav.responsive {
         position: relative;
     }
-    ul.topnav.responsive li{
+    ul.topnav.responsive li {
         display: block;
         float: none;
     }
-    ul.topnav.responsive li a{
-        display:block;
+    ul.topnav.responsive li a {
+        display: block;
         text-align: left;
     }
 }
+
+
 /*######### Footer ##########*/
 
 footer {
@@ -75,7 +82,10 @@ footer {
     text-align: center;
 }
 
-.col-3 {width:  25%;}
+.col-3 {
+    width: 25%;
+}
+
 .rowFooter {
     width: 100%;
     display: flex;
@@ -89,14 +99,16 @@ div.rowFooter a {
     padding: 10px;
     text-decoration-line: none;
 }
-div.rowFooter li{
-    padding: 10px;
 
+div.rowFooter li {
+    padding: 10px;
 }
-.pushRight{
+
+.pushRight {
     text-align: right;
 }
-.pushLeft{
+
+.pushLeft {
     text-align: left;
 }
 
@@ -110,10 +122,13 @@ body {
 }
 
 .hoverT {
-    columns: #008DD5;
-    background: #DFBBB1;
+    color: #E43F6F;
     font-size: 50px;
-    display: none;
+}
+
+.Date {
+    color: #008DD5;
+    font-size: 30px;
 }
 
 li {
