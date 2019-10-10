@@ -21,16 +21,31 @@
     <!--########################### NavBar #######################-->
     <section>
         <nav>
-            <ul id="navbar">
+            <ul id="navbar" class="topnav" >
                 <li><span class="logo"> <a href="https://i.imgur.com/34tPJzg.png"></a></span></li>
                 <li> <a href="Home.html#Home">Home</a> </li>
                 <li> <a href="Monument.html#Monuments">Monument</a> </li>
                 <li> <a href="Contact-us.html#Contact">Contact Us</a> </li>
                 <li> <a href="About-us.html#About">About us</a> </li>
+
+                <li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776; </a></li>
+
             </ul>
         </nav>
     </section>
-
+    <!-- ######### Função Menu Vertical ##########-->
+    <script>
+            function dropdownMenu(){/*funcao que cria um menu vertical sempre que o botao "dropdownicon" é clicado*/
+                var x = document.getElementById("navbar");/*x é a accao de carregar no botao "dropdownicon"*/
+                if(x.className === "topnav"){
+                    x.className += " responsive";
+                    /*Criamos uma nova class, adicionado responsive to  topnav ==> topnav.responsive*/
+                } else{
+                    x.className = "topnav";
+                }                
+            }
+        </script>
+  
     <!--######################## Monuments Section ##########################-->
     <!--################## Cathedrals section ###################-->
 
@@ -72,15 +87,32 @@
 
     <!--######################## Footer #############################-->
     <footer>
-        <a> </a>
-        <a href="Home.html#Home">Home</a>
-        <a href="Monument.html#Monuments">Monument</a>
-        <a href="Contact-us.html#Contact">Contact Us</a>
-        <a href="About-us.html#About">About us</a>
-        <a href="https://barcelonadaytours.com/barcelona-city-tour/">Tour</a>
-        <a href="https://www.tmb.cat/en/barcelona-transport">Transport</a>
-        <a href="https://www.residentadvisor.net/events/es/barcelona">Events</a>
-        <a href="https://www.timeout.com/barcelona/restaurants">Restaurants</a>
+        <div class="rowFooter">
+            <div class="col-3">
+                <ul class="pushRight">
+                    <li><a href="Home.html#Home">Home</a></li>
+                    <li><a href="Monument.html#Monuments">Monument</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><a href="Contact-us.html#Contact">Contact Us</a></li>
+                    <li><a href="About-us.html#About">About us</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><a href="https://barcelonadaytours.com/barcelona-city-tour/">Tour</a></li>
+                    <li><a href="https://www.tmb.cat/en/barcelona-transport">Transport</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="pushLeft">
+                    <li><a href="https://www.residentadvisor.net/events/es/barcelona">Events</a></li>
+                    <li><a href="https://www.timeout.com/barcelona/restaurants">Restaurants</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 

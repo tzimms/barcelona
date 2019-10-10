@@ -56,7 +56,28 @@ textarea {
     display: flex;
     align-items: center;
     height: 100%;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 0px;
 }
+.map,
+.contacting {
+    display: block;
+    margin: 0 auto;
+}
+input[type="text"],
+select,
+textarea {
+    align-self: center;
+    width: 80%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #DFBBB1;
+}
+   
+      
 
 .map iframe {
     display: flex;
@@ -85,22 +106,7 @@ textarea {
         align-items: center;
         flex-direction: column;
         width: 85vw;
-    }
-    input[type="text"],
-    select,
-    textarea {
-        align-self: center;
-        width: 80%;
-        padding: 12px;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-        background-color: #DFBBB1;
-    }
-    .map {
-        width: 100%;
-        align-items: center;
-        padding-top: 40px;
-        padding-left: 0px;
+
     }
 }
+
