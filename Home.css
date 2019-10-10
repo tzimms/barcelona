@@ -1,15 +1,73 @@
 /*##### Photo Slider ########*/
 
+
 div.containerSize {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
-}
+}  
 
 img.mySlides {
     width: 100%;
     height: 925px;
     max-width: 100%;
+    margin: 0;
+}
+
+div.Title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.Title h1 {
+    font-size: 200px;
+    text-shadow: 10px 10px 10px grey;
+}
+
+@media screen and (max-width: 900px) {
+    div.Title h1 {
+        font-size: 120px;
+    }
+    img.mySlides {
+        width: 100%;
+        height: auto;
+        min-height: 560px;
+        max-width: 100%;
+        
+    }
+    div.Title {
+        top: 35%;
+    }
+}
+@media screen and (max-width: 500px) {
+    div.Title h1 {
+        font-size: 70px;
+    }
+    img.mySlides {
+        width: 100%;
+        height: auto;
+        min-height: 310px;
+        max-width: 100%;
+    }
+    div.Title {
+        top: 20%;
+    }
+}
+@media screen and (max-width: 300px) {
+    div.Title h1 {
+        font-size: 50px;
+    }
+    img.mySlides {
+        width: 100%;
+        height: auto;
+        min-height: 188px;
+        max-width: 100%;
+    }
+    div.Title {
+        top: 10%;
+    }
 }
 
 #NavB {
