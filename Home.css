@@ -92,10 +92,6 @@ section.container {
     align-items: center;
 }
 
-div.col-4 {
-    width: 33.33%;
-}
-
 div.box {
     box-shadow: 0px 0px 5px 1px rgba(128, 128, 255, .3);
     text-align: center;
