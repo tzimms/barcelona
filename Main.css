@@ -36,16 +36,18 @@ ul#navbar.topnav li a:hover {
     color: black;
    
 }
- 
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-ul#navbar.topnav li.dropdownicon{
+
+ul.topnav li.dropdownicon {
     display: none;
 }
+
 
 /*### Mobile ###*/
 @media screen and (max-width: 600px) { /*define o que temos quando a largura da janela é inferior a 600px*/
@@ -61,6 +63,7 @@ ul#navbar.topnav li.dropdownicon{
         top: 0;
         right: 0;
     }
+
     ul#navbar.topnav.responsive{
         height: auto;
         position: relative;
@@ -84,7 +87,10 @@ footer {
     text-align: center;
 }
 
-.col-3 {width:  25%;}
+.col-3 {
+    width: 25%;
+}
+
 .rowFooter {
     width: 100%;
     display: flex;
@@ -98,14 +104,16 @@ div.rowFooter a {
     padding: 10px;
     text-decoration-line: none;
 }
-div.rowFooter li{
-    padding: 10px;
 
+div.rowFooter li {
+    padding: 10px;
 }
-.pushRight{
+
+.pushRight {
     text-align: right;
 }
-.pushLeft{
+
+.pushLeft {
     text-align: left;
 }
 
@@ -133,10 +141,13 @@ body {
 }
 
 .hoverT {
-    columns: #008DD5;
-    background: #DFBBB1;
+    color: #E43F6F;
     font-size: 50px;
-    display: none;
+}
+
+.Date {
+    color: #008DD5;
+    font-size: 30px;
 }
 
 li {

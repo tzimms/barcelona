@@ -1,201 +1,201 @@
-    /*#### Cathedrals section #####*/
-    
-    h1 {
-        padding: 20px;
-    }
-    
-    h2 {
-        padding: 25px
-    }
-    
-    p {
-        margin: 0px;
-    }
-    
-    .main {
-        width: 100%;
-        display: flex;
-    }
-    
-    #Monuments {
-        align-items: center;
-        width: 75%;
-        margin: auto;
-        border-radius: 10px;
-    }
-    
+/*#### Cathedrals section #####*/
+
+h1 {
+    padding: 30px;
+}
+
+h2 {
+    padding: 25px
+}
+
+p {
+    margin: 0px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+#Monuments {
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#imgtext {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+}
+
+#mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 35vw;
+}
+
+#maintext {
+    flex: 1;
+    margin: 0px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 800px) {
     #imgtext {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 0px;
-        padding: 0 30px;
+        flex-direction: column;
+        padding: 15px;
     }
-    
     #mainimg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        margin: 0px;
+        width: 80vw;
     }
-    
     #maintext {
-        flex: 1;
-        margin: 0px;
-        padding-left: 15px;
+        padding-top: 15px;
     }
-    
-    @media screen and (max-width: 800px) {
-        #imgtext {
-            flex-direction: column;
-            padding-bottom: 15px;
-            align-items: center;
-        }
-        #mainimg {
-            width: 80vw;
-        }
-        #maintext {
-            padding-top: 15px;
-        }
-    }
-    /*##### Cathedrals gallery #####*/
-    
+}
+
+
+/*##### Cathedrals gallery #####*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 50vw;
+}
+
+.top ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    z-index: 1;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: center;
+    margin: 0;
+}
+
+.top ul li {
+    display: flex;
+    position: relative;
+    height: 30%;
+    width: 31%;
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+.top ul li::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    color: white;
+    box-sizing: border-box;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.top ul li img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: grayscale(90%);
+}
+
+.lightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    position: relative;
+    top: -100%;
+    /* Transition */
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.lightbox:target {
+    outline: none;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+}
+
+.lightbox:target img {
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+@media screen and (max-width: 800px) {
     .container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        height: 100%;
     }
-    
     .top {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 40vw;
+        width: 90%;
+        height: 80%;
     }
-    
     .top ul {
-        align-items: center;
-        display: flex;
-        list-style: none;
-        z-index: 1;
-        box-sizing: border-box;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        width: 85vw;
         padding: 0px;
-        justify-content: center;
-        margin: 0;
+        justify-content: flex-start;
     }
-    
     .top ul li {
-        display: flex;
-        position: relative;
-        height: 30%;
-        width: 31%;
-        overflow: hidden;
-        padding-left: 5px;
+        width: 60vw;
+        height: fit-content;
+        max-height: 220px;
+        padding-top: 5px;
     }
-    
-    .top ul li::before {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        content: '';
-        color: white;
-        box-sizing: border-box;
-        pointer-events: none;
-        overflow: hidden;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+        justify-content: auto;
     }
-    
-    .top ul li img {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        filter: grayscale(90%);
+    .top ul li {
+        width: 60vw;
+        height: fit-content;
+        padding-top: 5px;
     }
-    
-    .lightbox {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        top: 0;
-        left: 0;
-        background-color: transparent;
-        z-index: 999;
-        opacity: 0;
-        pointer-events: none;
-    }
-    
-    .lightbox img {
-        max-width: 90%;
-        max-height: 80%;
-        position: relative;
-        top: -100%;
-        /* Transition */
-        transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -webkit-transition: all 1s ease;
-    }
-    
-    .lightbox:target {
-        outline: none;
-        opacity: 1;
-        pointer-events: auto;
-        transition: all 1.2s ease;
-        -moz-transition: all 1.2s ease;
-        -ms-transition: all 1.2s ease;
-        -o-transition: all 1.2s ease;
-        -webkit-transition: all 1.2s ease;
-    }
-    
-    .lightbox:target img {
-        top: 50%;
-        transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-    }
-    
-    @media screen and (max-width: 800px) {
-        .container {
-            flex-direction: column;
-            padding: 15px;
-            height: 100%;
-        }
-        .top {
-            width: 90%;
-            height: 80%;
-        }
-        .top ul {
-            flex-direction: column;
-            width: 85vw;
-            padding: 0px;
-            justify-content: flex-start;
-        }
-        .top ul li {
-            width: 60vw;
-            height: fit-content;
-            max-height: 220px;
-            padding-top: 5px;
-        }
-    }
-    
-    @media screen and (max-width: 400px) {
-        .container {
-            flex-direction: column;
-            padding: 15px;
-            justify-content: auto;
-        }
-        .top ul li {
-            width: 60vw;
-            height: fit-content;
-            padding-top: 5px;
-        }
-    }
+}
