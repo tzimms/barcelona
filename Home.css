@@ -43,7 +43,6 @@ div.box {
     text-align: center;
     padding: 2.5px;
     position: relative;
-    align-items: center;
 }
 
 div.box img {
@@ -61,23 +60,15 @@ div.box img {
     width: 100%;
     height: 100%;
     background: rgba(169, 169, 169, 0.7);
-    margin: auto;
-    display: block;
-}
-
-.hoverT {
-    bottom: 0%;
-    left: 50%;
-    text-align: center;
-    text-shadow: 5px 5px 5px rgb(41, 40, 40);
-}
-
-.hoverT {
-    color: #E43F6F;
-}
-
-.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+}
+
+.hoverT {
+    text-shadow: 5px 5px 5px rgb(41, 40, 40);
+    color: #E43F6F;
 }
 
 .overlay:hover {
@@ -100,5 +91,19 @@ div.box img {
         flex-direction: column;
         align-items: center;
         max-width: 640px;
+    }
+    .overlay {
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        background: none;
+        display: flex;
+    }
+    .hoverT {
+        color: #008DD5;
+        text-shadow: 3px 3px 0px white;
+    }
+    .Date {
+        color: #DFBBB1;
     }
 }
