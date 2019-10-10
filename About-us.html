@@ -7,10 +7,6 @@
     <a href="Monument.html"></a>
     <link rel="stylesheet" href="./Main.css">
     <link rel="stylesheet" href="./About-us.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel=”stylesheet” href=”css/bootstrap.css”>
-    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400i&display=swap" rel="stylesheet">
 
@@ -22,14 +18,10 @@
 </head>
 
 <body>
-
-
-
     <!--######################### NavBar #######################-->
-
     <section>
         <nav>
-            <ul id="navbar" class="topnav" >
+            <ul id="navbar" class="topnav">
                 <li><span class="logo"> <a href="https://i.imgur.com/34tPJzg.png"></a></span></li>
                 <li> <a href="Home.html#Home">Home</a> </li>
                 <li> <a href="Monument.html#Monuments">Monument</a> </li>
@@ -41,71 +33,58 @@
         </nav>
     </section>
     <!-- ######### Função Menu Vertical ##########-->
-        <script>
-            function dropdownMenu(){/*funcao que cria um menu vertical sempre que o botao "dropdownicon" é clicado*/
-                var x = document.getElementById("navbar");/*x é a accao de carregar no botao "dropdownicon"*/
-                if(x.className === "topnav"){
-                    x.className += " responsive";
-                    /*Criamos uma nova class, adicionado responsive to  topnav ==> topnav.responsive*/
-                } else{
-                    x.className = "topnav";
-                }                
+    <script>
+        function dropdownMenu() { /*funcao que cria um menu vertical sempre que o botao "dropdownicon" é clicado*/
+            var x = document.getElementById("navbar"); /*x é a accao de carregar no botao "dropdownicon"*/
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /*Criamos uma nova class, adicionado responsive to  topnav ==> topnav.responsive*/
+            } else {
+                x.className = "topnav";
             }
-        </script>
+        }
+    </script>
     <!--######################### Title Section #######################-->
     <section>
-        <h1 class="aboutustitle">About Us</h1>
-        <p class=”aboutussubtitle”>Our team</p>
-
-    </section>
-    <div class=”row”>
-        <div class=”col-md”>
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                </div>
-                <div class="team-content">
-
-                    <h4 class="job"> <span class="name"> Giovanna Marcondes</span>
-                        <div> Web Developement Student - <a href="https://www.linkedin.com/in/giovanna-marcondes-3a7155194/">LinkedIn</a></div>
-                    </h4>
-                </div>
-                      <!--####### Our team  #######-->
-    <div class=”row”>     
+        <div>
+            <h1 class="aboutustitle">About Us</h1>
+            <p class=”aboutussubtitle”>Our team</p>
+        </div>
+        <!--####### Our team  #######-->
+        <div class=”row”>
             <div class=”col-md”>
-                    <div class="our-team">
-                            <div class="picture">
-                                <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
-                            </div>
-                            <div class="team-content">
-        
-                                <h4 class="job"> <span class="name"> Giovanna Marcondes</span>
-                                    <div> Web Developement Student - <a href="https://www.linkedin.com/in/giovanna-marcondes-3a7155194/">LinkedIn</a></div>
-                                </h4>
-                            </div>
-        
-                        </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
                     </div>
-                    <div class=”col-md”>
-                            <div class="our-team">
-                                    <div class="picture">
-                                        <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                                    </div>
-                                    <div class="team-content">
-                
-                                        <h4 class="job"><span class="name">Matilde Ribeiro </span>
-                                            <div>Web Developement Student - <a href="https://www.linkedin.com/in/matilde-ribeiro-7a769a52">LinkedIn</a></div>
-                                        </h4>
-                                    </div>
-                
-                                </div>
-                            </div>
+                    <div class="team-content">
 
+                        <h4 class="job"> <span class="name"> Giovanna Marcondes</span>
+                            <div> Web Developement Student - <a href="https://www.linkedin.com/in/giovanna-marcondes-3a7155194/">LinkedIn</a></div>
+                        </h4>
                     </div>
-                    <div>
-                            <div class=”col-md”>
 
-     <div class="our-team">
+                </div>
+            </div>
+            <div class=”col-md”>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+                    </div>
+                    <div class="team-content">
+
+                        <h4 class="job"><span class="name">Matilde Ribeiro </span>
+                            <div>Web Developement Student - <a href="https://www.linkedin.com/in/matilde-ribeiro-7a769a52">LinkedIn</a></div>
+                        </h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class=”col-md”>
+
+                <div class="our-team">
                     <div class="picture">
                         <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
                     </div>
@@ -116,86 +95,58 @@
                         </h4>
                     </div>
 
+                </div>
             </div>
         </div>
-        <div class=”col-md”>
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
-                </div>
-                <div class="team-content">
+    </section>
 
-                    <h4 class="job"><span class="name">Matilde Ribeiro </span>
-                        <div>Web Developement Student - <a href="https://www.linkedin.com/in/matilde-ribeiro-7a769a52">LinkedIn</a></div>
-                    </h4>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-    <div>
-        <div class=”col-md”>
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
-                </div>
-                <div class="team-content">
-                    <h4 class="job"><span class="name">Victoria Zimmermann</span>
-                        <div>Web Developement Student - <a href="https://www.linkedin.com/in/victoria-z-b6b57295/">LinkedIn</a></div>
-                    </h4>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-                    </div>
-            
-                      <!--####### The school  #######-->
-
-    <hr class="line" />
-    <div class=”row”>
-        <div class=”col-md”>
-            <div id="imgtext">
-                <img class="main" src="https://i.imgur.com/TqOaZ3Q.png" alt="Wild Code School Logo"></img>
-            </div>
+    <!--####### The school  #######-->
+    <section>
+        <hr class="line" />
+        <div class=”row”>
             <div class=”col-md”>
                 <div id="imgtext">
-                    <h3 class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In assumenda quisquam mollitia nulla, id, ipsam fugit voluptatibus qui omnis quae reprehenderit deserunt, eaque similique unde! Voluptates vero culpa temporibus officiis?Lorem
-                        ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestiae dolor libero consequatur! Ad, totam. Quod veniam ex id consequatur, veritatis mollitia vel nihil cupiditate magni facere dolore voluptate excepturi.</h3>
+                    <img class="main" src="https://i.imgur.com/TqOaZ3Q.png" alt="Wild Code School Logo"></img>
+                </div>
+                <div class=”col-md”>
+                    <div id="imgtext">
+                        <h3 class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In assumenda quisquam mollitia nulla, id, ipsam fugit voluptatibus qui omnis quae reprehenderit deserunt, eaque similique unde! Voluptates vero culpa temporibus officiis?Lorem
+                            ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestiae dolor libero consequatur! Ad, totam. Quod veniam ex id consequatur, veritatis mollitia vel nihil cupiditate magni facere dolore voluptate excepturi.</h3>
+                    </div>
                 </div>
             </div>
-     <!--######################## Footer #############################-->   
-     <footer>
-            <div class="rowFooter">
-                <div class="col-3 mobileFoot">
-                    <ul class="pushRight">
-                        <li><a href="Home.html#Home">Home</a></li>
-                        <li><a href="Monument.html#Monuments">Monument</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 mobileFoot">
-                    <ul>
-                        <li><a href="Contact-us.html#Contact">Contact Us</a></li>
-                        <li><a href="About-us.html#About">About us</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 mobileFoot">
-                    <ul>
-                        <li><a href="https://barcelonadaytours.com/barcelona-city-tour/">Tour</a></li>
-                        <li><a href="https://www.tmb.cat/en/barcelona-transport">Transport</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 mobileFoot">
-                    <ul class="pushLeft">
-                        <li><a href="https://www.residentadvisor.net/events/es/barcelona">Events</a></li>
-                        <li><a href="https://www.timeout.com/barcelona/restaurants">Restaurants</a></li>
-                    </ul>
-                </div>
+        </div>
+
+    </section>
+    <!--######################## Footer #############################-->
+    <footer>
+        <div class="rowFooter">
+            <div class="col-3 mobileFoot">
+                <ul class="pushRight">
+                    <li><a href="Home.html#Home">Home</a></li>
+                    <li><a href="Monument.html#Monuments">Monument</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="col-3 mobileFoot">
+                <ul>
+                    <li><a href="Contact-us.html#Contact">Contact Us</a></li>
+                    <li><a href="About-us.html#About">About us</a></li>
+                </ul>
+            </div>
+            <div class="col-3 mobileFoot">
+                <ul>
+                    <li><a href="https://barcelonadaytours.com/barcelona-city-tour/">Tour</a></li>
+                    <li><a href="https://www.tmb.cat/en/barcelona-transport">Transport</a></li>
+                </ul>
+            </div>
+            <div class="col-3 mobileFoot">
+                <ul class="pushLeft">
+                    <li><a href="https://www.residentadvisor.net/events/es/barcelona">Events</a></li>
+                    <li><a href="https://www.timeout.com/barcelona/restaurants">Restaurants</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
