@@ -136,6 +136,7 @@ div.OTrow {
 
 @media screen and (max-width: 900px) {
     #wild {
+        text-align: center;
         flex-direction: column;
         margin: 0px;
         padding-top: 10px;

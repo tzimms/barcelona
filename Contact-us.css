@@ -9,7 +9,7 @@ h2 {
     align-items: center;
 }
 
-.container {
+.contactcontainer {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
