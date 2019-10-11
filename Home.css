@@ -80,7 +80,7 @@ div.Title h1 {
 section.container {
     width: 98%;
     height: 100%;
-    margin: 0;
+    margin: auto;
     padding: 50px 15px 60px 15px;
     z-index: -1;
 }
