@@ -108,12 +108,18 @@ div.rowFooter li {
     padding: 10px;
 }
 
-.pushRight {
+ul.pushRight {
+    padding: 0px;
     text-align: right;
 }
 
-.pushLeft {
+ul.pushLeft {
+    padding: 0;
     text-align: left;
+}
+
+ul.pad {
+    padding: 0;
 }
 
 
@@ -124,14 +130,14 @@ div.rowFooter li {
         width: 50%;
         display: block;
     }
-    .pad {
+    ul.pad {
         padding: 0px;
     }
-    .pushRight {
+    ul.pushRight {
         padding: 0px;
         text-align: center;
     }
-    .pushLeft {
+    ul.pushLeft {
         padding: 0px;
         text-align: center;
     }
