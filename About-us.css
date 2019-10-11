@@ -21,6 +21,7 @@ div.OTrow {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .our-team .picture {
@@ -77,20 +78,17 @@ div.OTrow {
     cursor: pointer;
 }
 
-.our-team .title {
-    display: block;
-    font-size: 15px;
-    color: #4e5052;
-    text-transform: capitalize;
-}
-
-.name {
+.names {
+    font-size: 20px;
     color: #F56476;
 }
+
 @media screen and (max-width: 900px) {
-    
+    #full section {
+        width: 80%;
+        margin: auto;
+    }
     div.OTrow {
-        width: 100%;
         align-items: center;
         justify-content: center;
     }
@@ -100,24 +98,16 @@ div.OTrow {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        max-width: 80vw;
+    }
+    .our-team {
+        width: 80vw;
+        padding: 10px 0px;
+        margin: 0px 0px 10px 0px;
     }
 }
 
 
-.aboutustitle {
-    /* font-weight: 500;
-    line-height: 1.2;
-    flex-wrap: wrap; */
-    /* margin-right: -15px;
-    margin-left: -15px;
-    padding-bottom: 30px;
-    padding-top: 50px; */
-    color: #E43F6F;
-    font-size: 60px;
-    font-family: 'Lato', sans-serif;
-    /* font-weight: 700; */
-}
+/* WildCode School Section */
 
 .image {
     width: 100%;
@@ -128,7 +118,7 @@ div.OTrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding-bottom: 25px;
 }
 
 #wildimg {
@@ -147,13 +137,14 @@ div.OTrow {
 @media screen and (max-width: 900px) {
     #wild {
         flex-direction: column;
-        padding: 15px;
+        align-items: none;
     }
-    #wildimg {
-        width: 80vw;
+    .image {
+        width: 100%;
+        display: block;
     }
     #wildtext {
-        width: 75vw;
-        padding-top: 15px;
+        width: 100%;
+        padding: 0px;
     }
 }
