@@ -1,4 +1,5 @@
 /*#### Cathedrals section #####*/
+
 p {
     margin: 0px;
 }
@@ -43,9 +44,10 @@ p {
         padding: 15px;
     }
     #mainimg {
-        width: 80vw;
+        width: 60vw;
     }
     #maintext {
+        width: 60vw;
         padding-top: 15px;
     }
 }
