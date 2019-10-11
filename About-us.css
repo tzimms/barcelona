@@ -11,7 +11,6 @@
     text-align: center;
     overflow: hidden;
     position: relative;
-    border-radius: 20px;
     display: block;
 }
 
@@ -119,6 +118,7 @@ div.OTrow {
     justify-content: center;
     align-items: center;
     padding-bottom: 25px;
+    margin-left: 10px;
 }
 
 #wildimg {
@@ -130,14 +130,15 @@ div.OTrow {
 
 #wildtext {
     width: 50%;
-    margin: 0px;
-    padding-left: 15px;
+    margin-right: 5px;
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 900px) {
     #wild {
         flex-direction: column;
-        align-items: none;
+        margin: 0px;
+        padding-top: 10px;
     }
     .image {
         width: 100%;
@@ -146,5 +147,6 @@ div.OTrow {
     #wildtext {
         width: 100%;
         padding: 0px;
+        margin: 0;
     }
 }
