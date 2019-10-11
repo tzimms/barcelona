@@ -124,14 +124,14 @@ div.rowFooter li {
         width: 50%;
         display: block;
     }
-    .pad {
+    ul.pad {
         padding: 0px;
     }
-    .pushRight {
+    ul.pushRight {
         padding: 0px;
         text-align: center;
     }
-    .pushLeft {
+    ul.pushLeft {
         padding: 0px;
         text-align: center;
     }
